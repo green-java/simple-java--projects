@@ -5,21 +5,23 @@ public class prime {
         System.out.println("Enter the input: ");
         Scanner in=new Scanner(System.in);
         int n=in.nextInt();
-        int p=primee(n);
-        System.out.println(p+"prime");
+        primee(n);
+        
     }
-   static int primee(int p)
+   static boolean primee(int p)
    {
-    int n=2;
+    int c=2;
     if(p<=1)
-    return -1;
-    while(n*n<=p){
-          if(n%p==0){
-            System.out.println(p+"is not prime");
-            break;
-          }     
-          n=n+1;
+    {
+    return false;
     }
-    return p;
+    while(c*c<=p){
+          if(c%p==0){
+            System.out.println(p+"is not prime");
+            return false;
+          } 
+          c++;
+    }
+    return c*c>=p;
    }
 }

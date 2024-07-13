@@ -3,9 +3,9 @@ public class nested_if {
     public static void main(String args[])
     {
         Scanner in=new Scanner(System.in);
-        System.out.println("Ebter your Married status: M/U ");
+        System.out.println("Enter your Married status: M/U ");
         char marital=in.next().charAt(0);
-        if(marital=='U'|| marital=='u')
+        if(marital=='U'|| marital=='u')//nested if condition
         {
             System.out.println("Enter your gender: M/F ");
             char gender=in.next().charAt(0);

@@ -15,7 +15,7 @@ static int linearsearch(int arr[],int target){
             //worst case O(n)  [never find the target element until last index during search ]
         }
     }
-    return -1;
+    return -1; //not found
 }
 
 
